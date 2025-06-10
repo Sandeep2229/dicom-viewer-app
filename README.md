@@ -1,71 +1,57 @@
-# Getting Started with Create React App
+# DICOM Viewer Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple web application that allows users to upload and view DICOM medical images directly in the browser. Built with React and the Cornerstone.js suite, it displays both the image and important metadata from the uploaded DICOM file. This tool is ideal for demonstrating basic medical imaging workflows and DICOM file handling in a modern web environment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Structure
 
-### `npm start`
+The project is organized for clarity and scalability. Here’s an overview of the key files and folders:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **public/index.html:** The HTML template loaded by React.
+- **src/components/DicomViewer.js:** Handles DICOM file upload, image rendering, and metadata extraction.
+- **src/App.js:** Renders the main viewer component.
+- **src/index.js:** Entry point for the React app.
+- **src/index.css:** Styles for the app.
+- **package.json:** Lists dependencies like React, Cornerstone.js, and scripts for running the project.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run the Project
 
-### `npm run build`
+Follow these steps to set up and run the DICOM Viewer on your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/) (v14 or newer recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- A modern web browser (Chrome, Firefox, Edge, Safari)
+- At least one DICOM file (`.dcm`) for testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Installation
 
-### `npm run eject`
+Clone the repository or download the source code, then install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*git clone https://github.com/Sandeep2229/dicom-viewer-app*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*cd dicom-viewer-app*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+*npm install*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Running the App
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*npm start*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+This will launch the app in your default browser at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Using the Viewer
 
-### Analyzing the Bundle Size
+- Click the "Upload DICOM File" button.
+- Select a `.dcm` file from your computer.
+- The DICOM image and its metadata will be displayed on the page.
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# dicom-viewer-app
