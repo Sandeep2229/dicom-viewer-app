@@ -55,3 +55,5 @@ This will launch the app in your default browser at [http://localhost:3000](http
 - The DICOM image and its metadata will be displayed on the page.
 ---
 
+![DICOM Viewer Dashboard](images/Dashboard.jpg)
+
