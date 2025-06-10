@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.upload-section {
+  margin: 20px 0;
+}
+
+.upload-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dicom-viewer {
+  width: 512px;
+  height: 512px;
+  background: #000;
+  margin: 20px 0;
+}
+
+.metadata-section {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 40%;
 }
